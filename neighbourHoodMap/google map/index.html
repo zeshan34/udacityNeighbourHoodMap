@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Google Map</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway|Skranji" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">    
+    </head>
+    <body>
+        <div>
+            <div class="jumbotron text-center">
+                <div><img class="pull-left" class="img-fluid" src="img/maps.jpg" width="700" height="150"> </div>  <h1  class="display-1">NEIGHBOURHOOD MAP</h1> 
+            </div>
+            <div class="container-fluid">
+                <div class="row content">
+                    <div class="col-sm-3 sidenav">
+                        <h2 class="text-centre" >Downers Grove Restaurant</h2>
+                        <ul class="nav nav-pills nav-stacked" data-bind="foreach:filterLocations">
+                            <li  class="active"  > <a data-bind="text:title,click:$parent.clickLocation" href ="" ></a> </li>
+                        </ul>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Name.." data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-9" id="map">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid">
+            <h4 class="text-right">FOUR SQUARE API <a href="https://foursquare.com/"><img src="img/four.jpg" atl="Four Square" width="50" height="50" class="pull-left"></a></h4>
+            </footer>
+        
+        
+        <script src="js/jquery.js"></script>   
+        <script src="js/style.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/initialLocation.js"></script>
+        <script src="js/knockout.js"></script>
+         <script async defer onerror=googleError(); src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPvHYSqgBzOtGaukCVjj5puiVoAwkW81Y&v=3&callback=initMap"></script>
+
+     
+
+    </body>
+</html>
+        
+       

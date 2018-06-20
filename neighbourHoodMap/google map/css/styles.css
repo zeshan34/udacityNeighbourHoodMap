@@ -1,0 +1,61 @@
+
+ 
+    .row.content {height: 1500px}
+    
+
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+  
+  
+      .row.content {height: auto;} 
+    }
+html,body{
+   font-family: 'Raleway', sans-serif;
+    font-size:48px;
+    height:100%;
+    padding:0;
+    border:0;
+    margin:2px;
+    
+}
+
+#map{
+    height:1000px;}
+
+
+@media only screen and (max-width: 800px) {
+  
+    .sidenav{
+        background-color:#7FFFD4;
+        
+    }
+    
+    #map{
+        height:500px;
+    }
+    
+    footer{
+        background-color:#00BFFF;
+        
+    }
+}
+
+.infoWindow{
+    background-color: aquamarine;
+    padding:3px;
+    border:3px solid;
+    
+}
+.content{
+    color: blueviolet;
+}
