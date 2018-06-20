@@ -2,9 +2,6 @@ var  locationMarker =[
     {
         title:"All Aboard Diner",
         location:{"lat":41.753549,"lng":-88.019696}
-      
-    
-    
     },
     
     {
